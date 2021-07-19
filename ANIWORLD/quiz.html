@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ANIWORLD</title>
+  <link rel="stylesheet" href="quiz.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Big+Shoulders+Stencil+Display:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="landing">
+    <!--HEADER-->
+    <header>
+      <nav class="navlinks">
+        <div class="dropdown">
+          <div class="login">
+            <button>
+              <div class="figurkopf"></div>
+              <div class="figurkoerper"></div>
+            </button>
+            <ul>
+              <input type="text" name="" placeholder="username" id="username">
+              <input type="password" name="" placeholder="password" id="password">
+              <input type="submit" name="" value="Login">
+            </ul>
+          </div>
+          <div class="suchleiste">
+            <input type="text" name="" placeholder="Suche" id="suche">
+          </div>
+          <div class="kategorie">
+            <button>
+              <div class="strich"></div>
+              <div class="strich"></div>
+              <div class="strich"></div>
+            </button>
+            <ul class="kategorieListe">
+              <li><a href="tierlist.html">TierList</a></li>
+              <li><a href="top25.html">Top25</a></li>
+              <li><a href="genres.html">Genres</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="charaktaere.html">Charaktäre</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navmitte"></nav>
+      <nav class="navrechts">
+        <button><a href="home.html" class="logo">A</a></button>
+      </nav>
+    </header>
+  </section>
+
+  <!--QUIZ-->
+  <div class="start-box quizstyle">
+    <h2>ANIME QUIZ</h2>
+    <p>Bist du bereit dein Können zu testen? Fragen kreuz und quer durch die Animeworld werden dir gestellt. 
+      Von Fähigkeiten, über Charaktäre, bis Städtenamen ist alles dabei. Gib dein bestes und du bekommst anschließend deinen Rank! Viel Glück!</p>
+    <button type="button" class="btn" onclick="startQuiz()">Start</button>
+  </div>
+  <div class="quiz-box quizstyle hide">
+    <div class="question-number"></div>
+    <div class="question-text"></div>
+    <div class="option-box"></div>
+    <div class="nextbutton">
+      <button type="button" class="btn" onclick="next()">Next</button>
+    </div>
+  </div>
+  <div class="result-box quizstyle hide">
+    <h1>Rank</h1>
+    <div id="rank"></div>
+    <h3 id="rankname"></h3>
+    <table>
+      <tr>
+        <td>Total Score</td>
+        <td><span class="total-score"></span></td>
+      </tr>
+      <tr>
+        <td>Percentage</td>
+        <td><span class="percentage"></span></td>
+      </tr>
+    </table>
+    <button type="button" class="btn"><a href="home.html">Home</a></button>
+  </div>
+
+  <!--TRENNLEISTE-->
+  <div class="trennleiste">Est.2021 ©ANIWORLD</div>
+
+  <!--FOOTER-->
+  <div class="footer">
+    <nav>
+      <div class="socialMedia">Social Media
+        <ul>
+          <a href="#" class="linkContainer">
+            <img src="pictures1/facebook.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/aniworld.69" class="linkContainer">
+            <img src="pictures1/instagram.png" alt="instagram">
+          </a>
+          <a href="#" class="linkContainer">
+            <img src="pictures1/twitter.png" alt="twitter">
+          </a>
+        </ul>
+      </div>
+      <div class="urheberrecht">
+        <p>Alle Dateien auf dieser Seite sind Eigentum der jeweiligen und rechtmäßigen Besitzer.</p>
+        <p>Kurs: "Applicazioni per il Web e per i Sistemi mobili"</p>
+        <p>Verfasser: Marco Alessandro Boyer</p>
+        <h3>©ANIWORLD</h3>
+      </div>
+    </nav>
+  </div>
+  
+  <!--SCRIPTS-->
+  <script src="javascripts/quiz.js"></script>
+</body>
+</html>

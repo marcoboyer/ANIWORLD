@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ANIWORLD</title>
+  <link rel="stylesheet" href="genres.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Big+Shoulders+Stencil+Display:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="landing">
+    <!--HEADER-->
+    <header>
+      <nav class="navlinks">
+        <div class="dropdown">
+          <div class="login">
+            <button>
+              <div class="figurkopf"></div>
+              <div class="figurkoerper"></div>
+            </button>
+            <ul>
+              <input type="text" name="" placeholder="username" id="username">
+              <input type="password" name="" placeholder="password" id="password">
+              <input type="submit" name="" value="Login">
+            </ul>
+          </div>
+          <div class="suchleiste">
+            <input type="text" name="" placeholder="Suche" id="suche">
+          </div>
+          <div class="kategorie">
+            <button onmouseover="showKategorie()" onmouseout="showKategorie()">
+              <div class="strich"></div>
+              <div class="strich"></div>
+              <div class="strich"></div>
+            </button>
+            <ul class="kategorieListe">
+              <li><a href="tierlist.html">TierList</a></li>
+              <li><a href="top25.html">Top25</a></li>
+              <li><a href="genres.html">Genres</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="charaktaere.html">Charaktäre</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navmitte"></nav>
+      <nav class="navrechts">
+        <button><a href="home.html" class="logo">A</a></button>
+      </nav>
+    </header>
+  </section>
+  
+<!--MAIN-->
+<section class="mainbox">
+    <div class="baumpfad">
+        <h2>HOME - GENRES</h2>
+    </div>
+    <div class="genreinhaltbox">
+        <div class="genreinhalt"><a href="#">Isekai</a></div>
+        <div class="genreinhalt"><a href="#">Maho</a></div>
+        <div class="genreinhalt"><a href="#">Mecha</a></div>
+        <div class="genreinhalt"><a href="#">Gourmet</a></div>
+        <div class="genreinhalt"><a href="#">Sport</a></div>
+        <div class="genreinhalt"><a href="#">Musik</a></div>
+        <div class="genreinhalt"><a href="#">Vampir</a></div>
+        <div class="genreinhalt"><a href="#">Spiel</a></div>
+        <div class="genreinhalt"><a href="#">Sentai</a></div>
+        <div class="genreinhalt"><a href="#">Schule</a></div>
+    </div>
+    <div class="genreleiste">
+        <h3><a href="#">Shonen</a></h3>
+    </div>
+    <div class="genrecontainer">
+        <div class="genre">
+          <img src="pictures1/genresdeathnote.jpeg" alt="Death Note">
+        </div>
+        <div class="genre">
+          <img src="pictures1/genresdragonball.jpeg" alt="Dragon Ball">
+        </div>
+        <div class="genre">
+          <img src="pictures1/genreshxh.jpeg" alt="HxH">
+        </div>
+        <div class="genre">
+          <img src="pictures1/genresnaruto.jpeg" alt="Naruto">
+        </div>
+        <div class="genre">
+          <img src="pictures1/genresonepiece.jpeg" alt="One Piece">
+        </div>
+    </div>
+    <div class="genretextbox">
+      <div class="genrebeschreibungsbox">
+        <h5>Death Note</h5>
+        <p>
+          Der überdurchschnittlich intelligente Highschool-Schüler Light Yagami findet eines Tages ein Notizbuch (Death Note)...
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Dragonball Super</h5>
+        <p>
+          Son Goku und seine Freunde genießen das ruhige Leben auf der Erde. Doch das friedliche Idyll wird urplötzlich gestört, 
+          als Beerus, der Gott der Zerstörungs... 
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>HunterxHunter</h5>
+        <p>
+          Der bei seiner Tante lebende zwölfjährige Gon Freeks erfährt vom Hunter Kaito, 
+          dass sein Vater Ging Freeks ein Hunter ist und noch lebt, aber nicht gefunden werden möchte...
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Naruto Shippuden</h5>
+        <p>
+          Nach zweieinhalb Jahren kehrt Naruto in sein Dorf zurück und wird dort freudig aufgenommen. Viel hat sich verändert...
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>One Piece</h5>
+        <p>
+          Der junge Monkey D. Ruffy stellt eine Mannschaft zusammen, um nach dem legendären Schatz One Piece zu suchen. 
+          Die Strohhutpiraten erleben auf ihrer Jagd jede Menge Abenteuer...
+        </p>
+      </div>
+    </div>
+    <div class="genrecontainer">
+      <div class="genre">
+        <img src="pictures1/genresreborn.jpeg" alt="Hitman Reborn">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genresblueexorcist.jpeg" alt="Blue Exorcist">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genresbleach.png" alt="Bleach">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genresblackcat.jpeg" alt="Black Cat">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genresbakuman.jpeg" alt="Bakuman">
+      </div>
+    </div>
+    <div class="genretextbox">
+      <div class="genrebeschreibungsbox">
+        <h5>Reborn!</h5>
+        <p>
+          Tsunayoshi Sawada, ist ein Schüler mit unterdurchschnittlichen Eigenschaften. 
+          Seine Noten sind unter dem Durchschnitt, seine sportlichen Eigenschaften hängen denen der Mädchen sogar hinterher...
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Blue Exorcist</h5>
+        <p>
+          Rin geht nicht mehr zur Schule, prügelt sich und Arbeit liegt ihm auch nicht. 
+          Zusammen mit seinem Zwillingsbruder Yukio, der das ganze Gegenteil von Rin zu sein scheint, lebt er bei seinem Ziehvater... 
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Bleach</h5>
+        <p>
+          Der 15-jährige Schüler Ichigo Kurosaki kann seit seiner Kindheit Geister sehen. 
+          Doch damit nicht genug: Als er die Shinigami Rukia trifft, wird sein Leben noch einmal gehörig auf den Kopf gestellt...
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Black Cat</h5>
+        <p>
+          In der Welt von Black Cat existiert eine weltweite Mafiaorganisation, 
+          die sich „Chronos“ nennt und einen Großteil der Weltpolitik und -wirtschaft kontrolliert...
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Bakuman</h5>
+        <p>
+          Moritaka Mashiro ist im dritten Jahrgang der Mittelschule und wird von den Erwachsenen ständig genervt, welche berufliche Laufbahn er denn einschlagen möchte. 
+          Er ist künstlerisch äußerst talentiert...
+        </p>
+      </div>
+    </div>
+    <div class="genreleiste">
+        <h3><a href="#">Shojo</a></h3>
+    </div>
+    <div class="genrecontainer">
+      <div class="genre">
+        <img src="pictures1/genresmaidsama.jpeg" alt="Maid Sama">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genreskaibutsu-kun.webp" alt="Kaibuts-kun">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genreskiminitodoke.webp" alt="Kiminitodoke">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genreshostclub.webp" alt="Host Club">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genreshotarubinomorie.webp" alt="Hotarubinomorie">
+      </div>
+    </div>
+    <div class="genretextbox">
+      <div class="genrebeschreibungsbox">
+        <h5>Kaichou wa meido-sama!</h5>
+        <p>
+          Die erste weibliche Schülerratspräsidentin zu sein ist nicht einfach, besonders wenn die Schule gerade von einer reinen Jungenschule zu einer gemischten Schule geworden ist.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Tonari no Kaibutsu-kun</h5>
+        <p>
+          Shizuku Mizutani ist apathisch gegenüber ihren Mitschülern und kümmert sich nur um ihre Noten. Doch ihre kalte Sicht auf das Leben beginnt sich zu ändern, als sie Haru Yoshida kennenlernt, einen gewalttätigen Unruhestifter, der nicht mehr am Unterricht teilnimmt, nachdem er zu Beginn des Schuljahres in einen Kampf geraten ist.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Kimi ni Todoke</h5>
+        <p>
+          Kimi ni TodokeKnown für ihre Ähnlichkeit mit dem Sadako Charakter von The Ring-Serie, Sawako Kuronuma ist der Spitzname "Sadako" gegeben und missverstanden zu werden erschreckend und bösartig wie ihre fiktive Gegenstück, obwohl sie eine schüchterne und süße Natur.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Ouran Koukou Host Club</h5>
+        <p>
+          Haruhi Fujioka ist eine kluge Stipendiatin ohne nennenswerten Rang oder Titel - eine seltene Spezies an der Ouran Academy, einer Eliteschule für Schüler mit hohem Stammbaum.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Hotarubi no Mori e</h5>
+        <p>
+          Fasziniert von der Sage eines Berggottes, verirrt sich die sechsjährige Hotaru Takegawa bei einem Besuch bei ihrem Onkel im uralten Wald. Erschöpft und verzweifelt nach Hilfe suchend, ist Hotaru begeistert, als sie einen maskierten Waldgeist namens Gin findet.
+        </p>
+      </div>
+    </div>
+    <div class="genrecontainer">
+      <div class="genre">
+        <img src="pictures1/genresakatsukinoyona.webp" alt="Akatsuki no yona">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genresaoharuride.webp" alt="aoharuride">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genresbananafish.webp" alt="Banana Fish">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genresorange.webp" alt="Orange">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genressukittelinayo.webp" alt="Sukitte li na yo">
+      </div>
+    </div>
+    <div class="genretextbox">
+      <div class="genrebeschreibungsbox">
+        <h5>Akatsuki no Yona</h5>
+        <p>
+          Prinzessin Yona lebt ein Leben in Luxus und Leichtigkeit, völlig abgeschirmt von den Problemen des scheinbar friedlichen Königreichs Kouka; doch der plötzliche Mord am König und der Verrat an ihrer geliebten Cousine Su-won bringen Yonas Leben in tödliche Gefahr. 
+         </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Ao Haru Ride</h5>
+        <p>
+          Futaba Yoshioka war früher eine attraktive und beliebte Mittelschülerin - beliebt beim anderen Geschlecht, aber geächtet von den Mädchen.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Banana Fish</h5>
+        <p>
+          Aslan Jade Callenreese, bekannt als Ash Lynx, war ein Ausreißer, der von den Straßen New Yorks aufgelesen und von dem berüchtigten Paten der Mafia, Dino Golzine, aufgezogen wurde.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Orange</h5>
+        <p>
+          Naho Takamiya's erster Tag in ihrem zweiten Jahr an der High School hat einen unruhigen Start. Nachdem sie spät aufgewacht ist, erhält sie einen seltsamen Brief, der an sie adressiert ist.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Sukitte Ii na yo.</h5>
+        <p>
+          Freunde lassen einen nur im Stich - das ist die traurige Wahrheit, mit der Mei Tachibana lebt, seit sie in der Grundschule von ihren sogenannten Freunden zu Unrecht für den Tod eines Klassentiers verantwortlich gemacht wurde.
+        </p>
+      </div>
+    </div>
+    <div class="genreleiste">
+        <h3><a href="#">Seinen</a></h3>
+    </div>
+    <div class="genrecontainer">
+      <div class="genre">
+        <img src="pictures1/genresvinlandsaga.webp" alt="Vinland Saga">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genrestokyoghoul.webp" alt="Tokyo Ghoul">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genresprisschool.webp" alt="Prison School">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genreselfenlied.webp" alt="Elfen Lied">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genreshellsing.webp" alt="Hellsing Ultimate">
+      </div>
+    </div>
+    <div class="genretextbox">
+      <div class="genrebeschreibungsbox">
+        <h5>Vinland Saga</h5>
+        <p>
+          Der junge Thorfinn wuchs mit den Geschichten alter Seefahrer auf, die über den Ozean gereist waren und den Ort der Legende, Vinland, erreicht hatten.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Tokyo Ghoul</h5>
+        <p>
+          Tokio ist zu einer grausamen und unbarmherzigen Stadt geworden - ein Ort, an dem bösartige Kreaturen namens "Ghouls" neben den Menschen existieren.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Prison School</h5>
+        <p>
+          Die am Stadtrand von Tokio gelegene Hachimitsu Private Academy ist ein renommiertes Mädcheninternat, das für seine hochwertige Ausbildung und disziplinierten Schülerinnen bekannt ist.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Elfen Lied</h5>
+        <p>
+          Lucy ist eine besondere Menschenrasse, die als "Diclonius" bezeichnet wird. Sie wurde mit einem kurzen Paar Hörner und unsichtbaren telekinetischen Händen geboren und wird Opfer von unmenschlichen wissenschaftlichen Experimenten der Regierung.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Hellsing Ultimate</h5>
+        <p>
+          Es gibt Kreaturen der Dunkelheit und des Bösen, die die Nacht plagen und jeden Menschen verschlingen, der das Pech hat, in ihre Fänge zu geraten. 
+        </p>
+      </div>
+    </div>
+    <div class="genrecontainer">
+      <div class="genre">
+        <img src="pictures1/genresbungoustraydogs.webp" alt="Bunous Stray Dogs">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genresbtoom.webp" alt="Btoom">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genresbokudakegainaimachi.webp" alt="Boku da keginaimachi">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genresblacklagoon.webp" alt="Black Lagoon">
+      </div>
+      <div class="genre">
+        <img src="pictures1/genresblackbullet.webp" alt="Black Bullet">
+      </div>
+    </div>
+    <div class="genretextbox">
+      <div class="genrebeschreibungsbox">
+        <h5>Bungou Stray Dogs</h5>
+        <p>
+          Seit Wochen wird das Waisenhaus von Atsushi Nakajima von einem mystischen Tiger heimgesucht, den nur er zu kennen scheint.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Btooom!</h5>
+        <p>
+          Ryouta Sakamoto ist arbeitslos und lebt bei seiner Mutter. Sein einziger wirklicher Erfolg ist, dass er Japans Top-Spieler des beliebten Online-Videospiels Btooom!
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Boku dake ga Inai Machi</h5>
+        <p>
+          Als sich eine Tragödie anbahnt, findet sich Satoru Fujinuma einige Minuten vor dem Unfall zurückversetzt.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Black Lagoon</h5>
+        <p>
+          Schwarze LaguneInnerhalb Thailands liegt Roanapur, eine verkommene, vom Verbrechen heimgesuchte Stadt, in der nicht einmal die Behörden oder Kirchen von den Klauen der Korruption verschont bleiben.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Black Bullet</h5>
+        <p>
+          Im Jahr 2021 infiziert ein parasitärer Virus namens "Gastrea" die Menschen und verwandelt sie in Monster.
+        </p>
+      </div>
+    </div>
+    <div class="genreleiste">
+        <h3><a href="#">Josei</a></h3>
+    </div>
+    <div class="genrecontainer">
+      <div class="genre">
+        <img src="pictures1/joseichhayafuru.webp" alt="chhayafuru">
+      </div>
+      <div class="genre">
+        <img src="pictures1/joseighost.webp" alt="Ghost">
+      </div>
+      <div class="genre">
+        <img src="pictures1/joseihachimitsutoclove.webp" alt="hachimitsutoclove">
+      </div>
+      <div class="genre">
+        <img src="pictures1/joseikarneval.webp" alt="Karneval">
+      </div>
+      <div class="genre">
+        <img src="pictures1/joseikuragehime.webp" alt="Kuragehime">
+      </div>
+    </div>
+    <div class="genretextbox">
+      <div class="genrebeschreibungsbox">
+        <h5>Chihayafuru</h5>
+        <p>
+          Chihaya Ayase, ein willensstarkes und burschikoses Mädchen, wächst unter dem Schatten ihrer älteren Schwester auf.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>07-Ghost</h5>
+        <p>
+          Die Militärakademie des Barsburg-Imperiums ist bekannt für die Ausbildung von Eliten, die dem Imperium den Sieg bringen.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Hachimitsu to Clover</h5>
+        <p>
+          Yuuta Takemoto, Student im zweiten Semester an einer Kunsthochschule, teilt sich eine billige Wohnung mit zwei Senioren
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Karneval</h5>
+        <p>
+          Auf der Suche nach seinem kostbaren Freund gerät ein Junge namens Nai in die Fänge einer schönen Frau, deren Aussehen nur von ihrem Geschmack für Menschenfleisch übertroffen wird.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Kuragehime</h5>
+        <p>
+          Seit ihre verstorbene Mutter sie als Kind in ein Aquarium mitnahm, ist Tsukimi Kurashita von Quallen besessen und vergleicht ihre wallenden Tentakel mit dem weißen Kleid einer Prinzessin.
+        </p>
+      </div>
+    </div>
+    <div class="genrecontainer">
+      <div class="genre">
+        <img src="pictures1/joseinodamecatabile.webp" alt="nodamecatabile">
+      </div>
+      <div class="genre">
+        <img src="pictures1/joseisakamichinoapollon.webp" alt="sakamichinoapollon">
+      </div>
+      <div class="genre">
+        <img src="pictures1/joseiservamp.webp" alt="Servamp">
+      </div>
+      <div class="genre">
+        <img src="pictures1/joseishouwagenroku.webp" alt="shouwagenroku">
+      </div>
+      <div class="genre">
+        <img src="pictures1/joseiusagidrop.webp" alt="usagidrop">
+      </div>
+    </div>
+    <div class="genretextbox">
+      <div class="genrebeschreibungsbox">
+        <h5>Nodame Cantabile</h5>
+        <p>
+          Shinichi Chiaki ist ein erstklassiger Musiker, dessen Traum es ist, unter den Eliten in Europa zu spielen. 
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Sakamichi no Apollon</h5>
+        <p>
+          Der introvertierte klassische Pianist und Spitzenschüler Kaoru Nishimi ist gerade in Kyushu für sein erstes Jahr an der High School angekommen.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Servamp</h5>
+        <p>
+          Mahiru Shirota glaubt fest daran, dass einfach am besten ist und lästige Dinge um jeden Preis vermieden werden sollten.
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Shouwa Genroku Rakugo Shinjuu</h5>
+        <p>
+          Yotarou ist ein ehemaliges Yakuza-Mitglied, das frisch aus dem Gefängnis kommt und nur auf eine Sache fixiert ist...
+        </p>
+      </div>
+      <div class="genrebeschreibungsbox">
+        <h5>Usagi Drop</h5>
+        <p>
+          Daikichi Kawachi ist ein 30-jähriger Junggeselle, der einen respektablen Job hat, aber ansonsten ziellos durchs Leben irrt.
+        </p>
+      </div>
+    </div>
+</section>
+
+  <!--TRENNLEISTE-->
+  <div class="trennleiste">Est.2021 ©ANIWORLD</div>
+
+  <!--FOOTER-->
+  <div class="footer">
+    <nav>
+      <div class="socialMedia">Social Media
+        <ul>
+          <a href="#" class="linkContainer">
+            <img src="pictures1/facebook.png" alt="facebook">
+          </a>
+          <a href="https://www.instagram.com/aniworld.69" class="linkContainer">
+            <img src="pictures1/instagram.png" alt="instagram">
+          </a>
+          <a href="#" class="linkContainer">
+            <img src="pictures1/twitter.png" alt="twitter">
+          </a>
+        </ul>
+      </div>
+      <div class="urheberrecht">
+        <p>Alle Dateien auf dieser Seite sind Eigentum der jeweiligen und rechtmäßigen Besitzer.</p>
+        <p>Kurs: "Applicazioni per il Web e per i Sistemi mobili"</p>
+        <p>Verfasser: Marco Alessandro Boyer</p>
+        <h3>©ANIWORLD</h3>
+      </div>
+    </nav>
+  </div>
+
+  <!--SCRIPTS-->
+  <script src="javascripts/genres.js"></script>
+</body>
+</html>

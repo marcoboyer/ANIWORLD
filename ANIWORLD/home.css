@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/*DROPDOWN*/
+body{
+    background: url("pictures1/background.jpg") fixed;
+    background-size: cover;
+}
+header{
+    font-family: 'Rajdhani', sans-serif;
+    background: darkgray;
+    margin-bottom: 60%;
+    display: flex;
+    flex-direction: row;
+}
+.navlinks{
+    width: 50%;
+}
+.navmitte,.navrechts{
+    width: 25%;
+}
+.dropdown,.navrechts{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    height: 50px;
+    flex-direction: row;
+    user-select: none;
+}
+.dropdown button, .navrechts button{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+.navrechts button a{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    background: rgb(192, 86, 86);
+    font-size: 75px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.suchleiste{
+    display: flex;
+    width: 200px;
+    height: 25px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+.suchleiste input[type="text"]{
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.logo{
+    display: flex;
+    width: 75px;
+    height: 100px;
+    position: relative;
+}
+.kategorie{
+    position: relative;
+    margin: 5px;
+}
+.kategorie ul{
+    list-style: none;
+    background: darkgray;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    width: 100px;
+    height: 200px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(15px);
+    transition: all 1s ease;
+}
+.kategorie li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kategorie button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 20px;
+}
+button .strich{
+    width: 20px;
+    height: 2px;
+    background: whitesmoke;
+    margin-bottom: 2px;
+}
+.kategorie li:hover{
+    background: lightgray;
+}
+.kategorie a, .dropdown button a{
+    text-decoration: none;
+    color: white;
+}
+.kategorie button:focus + ul{
+    opacity: 1;
+    pointer-events:all;
+}
+.kategorie ul:hover{
+    pointer-events: all;
+}
+.login button{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login button .figurkopf{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: whitesmoke;
+    margin: 0 auto;
+}
+.login button .figurkoerper{
+    width: 20px;
+    height: 10px;
+    border-radius: 10px 10px 0px 0px;
+    background: whitesmoke;
+}
+.login ul{
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+}
+.login ul:hover{
+    pointer-events: all;
+}
+.login input{
+    width: 100%;
+    height: 25px;
+}
+.login button:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(10px);
+}
+/*TRENNLEISTE*/
+.trennleiste{
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10px;
+    background: rgb(201, 200, 200);
+    color: white;
+    font-size: xx-small;
+}
+/*INFORMATIONEN*/
+.box{
+    font-family: 'Rajdhani', sans-serif;
+    background: rgb(192, 86, 86);
+}
+.infobox{
+    margin: 0;
+    padding: 80px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.infobox p{
+    width: 40%;
+    margin: 0;
+    word-wrap: break-word;
+}
+/*FOOTER*/
+.footer{
+    font-family: 'Rajdhani', sans-serif;
+    background: darkgray;
+    width: 100%;
+    height: 100px;
+}
+.footer nav{
+    width: 100%;
+    height: 100%;
+}
+.socialMedia{
+    color: black;
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+
+}
+.socialMedia ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.socialMedia img{
+    width: 100%;
+    height: 100%;
+}
+.linkContainer{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.kameraLinse{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border-color: black;
+    border-width: thin;
+    border:solid;
+    border-radius: 5px;
+}
+.urheberrecht{
+    color: black;
+    width: 25%;
+    height: 100%;
+    float: right;
+    font-size: xx-small;
+    padding: 10px;
+}
+.urheberrecht p{
+    margin: 2px;
+    width: 100%;
+}
+.urheberrecht h3{
+    font-weight: 900;
+}
+/*INTROSLIDER*/
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider {
+    background: darkgray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    transform: translateY(1000%);
+} 
+.intro-text {
+    color: rgb(233, 233, 233);
+    font-size: 3rem;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+} 
+.hide {
+    background: black;
+    overflow: hidden;
+    user-select: none;
+}
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+    cursor: pointer;
+}
+.hide span:hover{
+    color: darkgray;
+}
+@media (max-width: 320px){
+    .infobox{
+        display: none;
+    }
+    .trennleiste{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+}
+@media (max-width: 500px){
+    body{
+        background: rgb(245, 244, 244);
+    }
+    .infobox p{
+        display: none;
+    }
+}
+@media (min-width: 501px) and (max-width: 1000px){
+    .infobox{
+        flex-direction: column;
+    }
+    .infobox p{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .infobox .video{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+@media (max-width: 700px){
+    header{
+        margin-bottom: 700px;
+    }
+    .suchleiste{
+        display: none;
+    }
+    .kategorie{
+        padding-left: 25px;
+        margin: 0;
+    }
+    .kategorie button{
+        height: 50px;
+    }
+    .kategorie ul{
+        transform: none;
+    }
+    .login button{
+        display: none;
+    }
+    .login ul{
+        display: none;
+    }
+    .socialMedia{
+        width: 45%;
+    }
+    .urheberrecht{
+        width: 45%;
+    }
+}

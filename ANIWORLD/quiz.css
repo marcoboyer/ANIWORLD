@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/*DROPDOWN*/
+body{
+    background: rgb(48, 47, 47);
+}
+header{
+    font-family: 'Rajdhani', sans-serif;
+    background: darkgray;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.navlinks, .navrechts{
+    width: 50%;
+}
+.navmitte,.navrechts{
+    width: 25%;
+}
+.dropdown,.navrechts{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    height: 50px;
+    flex-direction: row;
+    user-select: none;
+}
+.dropdown button, .navrechts button{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+.navrechts button a{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    background: rgb(192, 86, 86);
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.suchleiste{
+    display: flex;
+    width: 200px;
+    height: 25px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+.suchleiste input[type="text"]{
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.logo{
+    display: flex;
+    width: 75px;
+    height: 100px;
+    position: relative;
+}
+.kategorie{
+    position: relative;
+    margin: 5px;
+}
+.kategorie ul{
+    list-style: none;
+    background: darkgray;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    width: 100px;
+    height: 200px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(15px);
+    transition: all 1s ease;
+}
+.kategorie li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kategorie button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 20px;
+}
+button .strich{
+    width: 20px;
+    height: 2px;
+    background: whitesmoke;
+    margin-bottom: 2px;
+}
+.kategorie li:hover{
+    background: lightgray;
+}
+.kategorie a, .dropdown button a{
+    text-decoration: none;
+    color: white;
+}
+.kategorie button:focus + ul{
+    opacity: 1;
+    pointer-events:all;
+}
+.kategorie ul:hover{
+    pointer-events: all;
+}
+.login button{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login button .figurkopf{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: whitesmoke;
+    margin: 0 auto;
+}
+.login button .figurkoerper{
+    width: 20px;
+    height: 10px;
+    border-radius: 10px 10px 0px 0px;
+    background: whitesmoke;
+}
+.login ul{
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+}
+.login input{
+    width: 100%;
+    height: 25px;
+}
+.login button:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(10px);
+}
+/*QUIZ*/
+.quizstyle{
+    font-family: 'Rajdhani', sans-serif;
+    width: 80%;
+    margin: 200px auto;
+    background: rgb(124, 124, 124);
+    border: solid;
+    border-width: thin;
+    border: black;
+    border-radius: 10px;
+    animation: fadeInBottom 1s ease;
+}
+@keyframes fadeInBottom{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.quizstyle::before,
+.quizstyle::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.quizstyle.hide{
+    display: none;
+}
+.start-box h2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+.start-box p{
+    padding: 20px;
+    margin: 5px 20%;
+    color: whitesmoke;
+}
+.btn, .btn a{
+    user-select: none;
+    border: none;
+    background: rgb(192, 86, 86);
+    color: whitesmoke;
+    font-size: x-large;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+}
+.quiz-box{
+    padding: 10px;
+}
+.question-number,
+.question-text,
+.option-box,
+.nextbutton{
+    width: 100%;
+    float: left;
+}
+
+.question-number{
+    color: rgb(192, 86, 86);
+}
+.question-text{
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    font-size: x-large;
+}
+.option-box .option{
+    background: lightgray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    opacity: 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    animation: fadeIn 0.5s ease forwards;
+    position: relative;
+    overflow: hidden;
+}
+ @keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.result-box{
+    text-align: center;
+}
+.result-box h1{
+    font-size: xx-large;
+    color: white;
+    text-decoration-line: underline;
+}
+.result-box #rank{
+    width: 200px;
+    height: 200px;
+    margin: 5px auto;
+    background-size: cover;
+}
+.result-box table{
+    width: 50%;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+.result-box table td{
+    width: 50%;
+    border: 1px solid darkgray;
+    text-align: left;
+    padding: 5px;
+    font-weight: 500;
+}
+#rankname{
+    color: whitesmoke;
+}
+/*FOOTER*/
+.footer{
+    font-family: 'Rajdhani', sans-serif;
+    background: darkgray;
+    width: 100%;
+    height: 100px;
+}
+.footer nav{
+    width: 100%;
+    height: 100%;
+}
+.socialMedia{
+    color: black;
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+
+}
+.socialMedia ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.socialMedia img{
+    width: 100%;
+    height: 100%;
+}
+.linkContainer{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.kameraLinse{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border-color: black;
+    border-width: thin;
+    border:solid;
+    border-radius: 5px;
+}
+.urheberrecht{
+    color: black;
+    width: 25%;
+    height: 100%;
+    float: right;
+    font-size: xx-small;
+    padding: 10px;
+}
+.urheberrecht p{
+    margin: 2px;
+    width: 100%;
+}
+.urheberrecht h3{
+    font-weight: 900;
+}
+/*TRENNLEISTE*/
+.trennleiste{
+    margin-top: 10%;
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10px;
+    background: rgb(201, 200, 200);
+    color: white;
+    font-size: xx-small;
+}
+
+@media (max-width: 320px){
+    .trennleiste{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+}
+@media (max-width: 700px){
+    .quizstyle{
+        margin: 100px auto;
+    }
+    .start-box p{
+        margin: 5px 5%;
+    }
+    .trennleiste{
+        margin-top: 40%;
+    }
+    .suchleiste{
+        display: none;
+    }
+    .kategorie{
+        padding-left: 25px;
+        margin: 0;
+    }
+    .kategorie button{
+        height: 50px;
+    }
+    .kategorie ul{
+        transform: none;
+    }
+    .login button{
+        display: none;
+    }
+    .login ul{
+        display: none;
+    }
+    .socialMedia{
+        width: 45%;
+    }
+    .urheberrecht{
+        width: 45%;
+    }
+}

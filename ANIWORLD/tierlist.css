@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/*DROPDOWN*/
+body{
+    background: rgb(48, 47, 47);
+}
+header{
+    font-family: 'Rajdhani', sans-serif;
+    background: darkgray;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.navlinks{
+    width: 50%;
+}
+.navmitte,.navrechts{
+    width: 25%;
+}
+.dropdown,.navrechts{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    height: 50px;
+    flex-direction: row;
+    user-select: none;
+}
+.dropdown button, .navrechts button{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+.navrechts button a{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    background: rgb(192, 86, 86);
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.suchleiste{
+    display: flex;
+    width: 200px;
+    height: 25px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+.suchleiste input[type="text"]{
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.logo{
+    display: flex;
+    width: 75px;
+    height: 100px;
+    position: relative;
+}
+.kategorie{
+    position: relative;
+    margin: 5px;
+}
+.kategorie ul{
+    list-style: none;
+    background: darkgray;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    width: 100px;
+    height: 200px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(15px);
+    transition: all 1s ease;
+}
+.kategorie li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kategorie button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 20px;
+}
+button .strich{
+    width: 20px;
+    height: 2px;
+    background: whitesmoke;
+    margin-bottom: 2px;
+}
+.kategorie li:hover{
+    background: lightgray;
+}
+.kategorie a, .dropdown button a{
+    text-decoration: none;
+    color: white;
+}
+.kategorie button:focus + ul{
+    opacity: 1;
+    pointer-events:all;
+}
+.kategorie ul:hover{
+    pointer-events: all;
+}
+.login button{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login button .figurkopf{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: whitesmoke;
+    margin: 0 auto;
+}
+.login button .figurkoerper{
+    width: 20px;
+    height: 10px;
+    border-radius: 10px 10px 0px 0px;
+    background: whitesmoke;
+}
+.login ul{
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+}
+.login input{
+    width: 100%;
+    height: 25px;
+}
+.login button:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(10px);
+}
+/*TIERLIST*/
+.tierlistbox{
+    font-family: 'Rajdhani', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    background: rgb(124, 124, 124);
+    border: solid;
+    border-width: thin;
+    border: black;
+    animation: fadeInBottom 3s ease;
+}
+@keyframes fadeInBottom{
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.tierlistspalte{
+    width: 100%;
+    min-height: 60px;
+    background: blanchedalmond;
+    margin: 1px 0;
+    display: flex;
+}
+.bewertung1, .bewertung2, .bewertung3, .bewertung4, .bewertung5{
+    width: 10%;
+    min-height: 60px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.bewertung1{
+    background: rgb(192, 86, 86);
+}
+.bewertung2{
+    background: rgb(192, 125, 86);
+}
+.bewertung3{
+    background: rgb(192, 158, 86);
+}
+.bewertung4{
+    background: rgb(192, 176, 86);
+}
+.bewertung5{
+    background: rgb(164, 192, 86);
+}
+.container{
+    width: 90%;
+    min-height: 60px;
+    background: rgba(169, 169, 169, 0.5);
+    float: left;
+}
+.containerbottom{
+    margin-top: 5px;
+    min-width: 100%;
+    min-height: 420px;
+}
+.draggable{
+    width:10%;
+    height:60px;
+    padding: 1px;
+    background: darkgray;
+    cursor: move;
+    float: left;
+}
+.draggable img{
+    height: 100%;
+    width: 100%;
+}
+.dragging{
+    opacity: .5;
+}
+
+/*FOOTER*/
+.footer{
+    font-family: 'Rajdhani', sans-serif;
+    background: darkgray;
+    width: 100%;
+    height: 100px;
+}
+.footer nav{
+    width: 100%;
+    height: 100%;
+}
+.socialMedia{
+    color: black;
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+
+}
+.socialMedia ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.socialMedia img{
+    width: 100%;
+    height: 100%;
+}
+.linkContainer{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.kameraLinse{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border-color: black;
+    border-width: thin;
+    border:solid;
+    border-radius: 5px;
+}
+.urheberrecht{
+    color: black;
+    width: 25%;
+    height: 100%;
+    float: right;
+    font-size: xx-small;
+    padding: 10px;
+}
+.urheberrecht p{
+    margin: 2px;
+    width: 100%;
+}
+.urheberrecht h3{
+    font-weight: 900;
+}
+/*TRENNLEISTE*/
+.trennleiste{
+    margin-top: 10%;
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10px;
+    background: rgb(201, 200, 200);
+    color: white;
+    font-size: xx-small;
+}
+
+
+@media (max-width: 320px){
+    .trennleiste{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+}
+@media (max-width: 550px){
+    .containerbottom{
+        display: none;
+    }
+    .trennleiste{
+        margin-top:45%;
+    }
+}
+@media (max-width: 700px){
+    .suchleiste{
+        display: none;
+    }
+    .kategorie{
+        padding-left: 25px;
+        margin: 0;
+    }
+    .kategorie button{
+        height: 50px;
+    }
+    .kategorie ul{
+        transform: none;
+    }
+    .login button{
+        display: none;
+    }
+    .login ul{
+        display: none;
+    }
+    .socialMedia{
+        width: 45%;
+    }
+    .urheberrecht{
+        width: 45%;
+    }
+}

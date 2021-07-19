@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/*DROPDOWN*/
+body{
+    background: rgb(48, 47, 47);
+}
+header{
+    font-family: 'Rajdhani', sans-serif;
+    background: darkgray;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.navlinks, .navrechts{
+    width: 50%;
+}
+.navmitte,.navrechts{
+    width: 25%;
+}
+.dropdown,.navrechts{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    height: 50px;
+    flex-direction: row;
+    user-select: none;
+}
+.dropdown button, .navrechts button{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+.navrechts button a{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    background: rgb(192, 86, 86);
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.suchleiste{
+    display: flex;
+    width: 200px;
+    height: 25px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+.suchleiste input[type="text"]{
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.logo{
+    display: flex;
+    width: 75px;
+    height: 100px;
+    position: relative;
+}
+.kategorie{
+    position: relative;
+    margin: 5px;
+}
+.kategorie ul{
+    list-style: none;
+    background: darkgray;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    width: 100px;
+    height: 200px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(15px);
+    transition: all 1s ease;
+}
+.kategorie li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kategorie button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 20px;
+}
+button .strich{
+    width: 20px;
+    height: 2px;
+    background: whitesmoke;
+    margin-bottom: 2px;
+}
+.kategorie li:hover{
+    background: lightgray;
+}
+.kategorie a, .dropdown button a{
+    text-decoration: none;
+    color: white;
+}
+.kategorie button:focus + ul{
+    opacity: 1;
+    pointer-events:all;
+}
+.kategorie ul:hover{
+    pointer-events: all;
+}
+.login button{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login button .figurkopf{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: whitesmoke;
+    margin: 0 auto;
+}
+.login button .figurkoerper{
+    width: 20px;
+    height: 10px;
+    border-radius: 10px 10px 0px 0px;
+    background: whitesmoke;
+}
+.login ul{
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+}
+.login input{
+    width: 100%;
+    height: 25px;
+}
+.login button:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(10px);
+}
+
+/*MAIN*/
+.mainbox{
+    font-family: 'Rajdhani', sans-serif;
+    background: rgb(68, 68, 68);
+    width: 60%;
+    margin: 0 auto;
+    animation: fadeIn 3s ease;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.baumpfad{
+    width: 100%;
+    height: 25px;
+    border-bottom: .5px solid darkgray;
+    color: darkgrey;
+    display: flex;
+    flex-direction: row;
+}
+.genreinhaltbox{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 12px;
+    flex-wrap: wrap;
+}
+.genreinhalt{
+    width: 20%;
+    margin: 3px;
+    height: 30px;
+    background: rgb(58, 58, 58);
+    text-align: center;
+    color: whitesmoke;
+}
+.genreinhalt a,.genreleiste a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.baumpfad h2{
+    margin: 5px 15px;
+    font-size: 0.75em;
+}
+.genrecontainer{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.genreleiste{
+    margin:  15px;
+    background: rgba(169, 169, 169, 0.171);
+    display: flex;
+}
+.genreleiste h3{
+    padding: 3px;
+    font-size: 1em;
+    color: whitesmoke;
+}
+.genre{
+    height: 200px;
+    width: 20%;
+    margin: 5px;
+}
+.genre img{
+    user-select: none;
+    width: 100%;
+    height: 100%;
+}
+.genretextbox{
+    display: flex;
+    flex-direction: row;
+    margin: 0 12px;
+}
+.genrebeschreibungsbox{
+    height: 100px;
+    width: 20%;
+    margin: 0 5px;
+    color: whitesmoke;
+}
+.genrebeschreibungsbox h5{
+    font-size: 0.75em;
+}
+.genrebeschreibungsbox p{
+    font-size: 0.5em;
+}
+
+/*FOOTER*/
+.footer{
+    font-family: 'Rajdhani', sans-serif;
+    background: darkgray;
+    width: 100%;
+    height: 100px;
+}
+.footer nav{
+    width: 100%;
+    height: 100%;
+}
+.socialMedia{
+    color: black;
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+
+}
+.socialMedia ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.socialMedia img{
+    width: 100%;
+    height: 100%;
+}
+.linkContainer{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.kameraLinse{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border-color: black;
+    border-width: thin;
+    border:solid;
+    border-radius: 5px;
+}
+.urheberrecht{
+    color: black;
+    width: 25%;
+    height: 100%;
+    float: right;
+    font-size: xx-small;
+    padding: 10px;
+}
+.urheberrecht p{
+    margin: 2px;
+    width: 100%;
+}
+.urheberrecht h2{
+    font-weight: 900;
+}
+/*TRENNLEISTE*/
+.trennleiste{
+    margin-top: 10%;
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 10px;
+    background: rgb(201, 200, 200);
+    color: white;
+    font-size: xx-small;
+}
+
+@media (max-width: 320px){
+    .trennleiste{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+}
+@media (max-width: 350px){
+    .genreinhaltbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .genreinhalt{
+        width: 100%;
+    }
+}
+@media (max-width: 500px){
+    .genreinhalt{
+        background: none;
+    }
+}
+@media (max-width: 600px){
+    .genrecontainer{
+        display: none;
+    }
+    .genretextbox{
+        display: none;
+    }
+}
+@media (max-width: 700px){
+    header{
+        margin-bottom: 40%;
+    }
+    .trennleiste{
+        margin-top: 30%;
+    }
+    .genrebeschreibungsbox p{
+        display: none;
+    }
+    .suchleiste{
+        display: none;
+    }
+    .kategorie{
+        padding-left: 25px;
+        margin: 0;
+    }
+    .kategorie button{
+        height: 50px;
+    }
+    .kategorie ul{
+        transform: none;
+    }
+    .login button{
+        display: none;
+    }
+    .login ul{
+        display: none;
+    }
+    .socialMedia{
+        width: 45%;
+    }
+    .urheberrecht{
+        width: 45%;
+    }
+}
+
+@media (max-width: 1000px){
+    .mainbox{
+        width: 80%;
+    }
+    .genrebeschreibungsbox p{
+        font-size: 6px;
+    }
+}
